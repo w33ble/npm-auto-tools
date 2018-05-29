@@ -1,21 +1,38 @@
+#!/usr/bin/env node
 /* eslint no-console: 0 */
+
 const path = require('path');
 const execa = require('execa');
+const getopts = require('getopts');
 
 const clTemplate = path.join(__dirname, '..', 'changelog-template.hbs');
+const options = getopts(process.argv.slice(2), {
+  alias: {
+    u: 'unreleased',
+  },
+  default: {
+    unreleased: false,
+  },
+});
 
 const showWarnings = res => res.stderr.length && console.warn(res.stderr);
 
-const autoChangelog = () =>
-  execa('auto-changelog', [
+const autoChangelog = () => {
+  const args = [
     '--commit-limit',
-    '0',
+    'false',
+    '--ignore-commit-pattern',
+    '(chore|test):',
     '--output',
     'CHANGELOG.md',
     '--template',
     clTemplate,
-    '--unreleased',
-  ]);
+  ];
+
+  if (options.unreleased) args.push('--unreleased');
+
+  return execa('auto-changelog', args);
+};
 
 const autoAuthors = () => execa('auto-authors');
 
