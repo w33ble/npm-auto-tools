@@ -38,10 +38,13 @@ const autoAuthors = () => execa('auto-authors');
 
 const commitFiles = () => execa('git', ['add', 'CHANGELOG.md', 'AUTHORS.md']);
 
-async function runScript() {
-  showWarnings(await autoChangelog());
-  showWarnings(await autoAuthors());
-  showWarnings(await commitFiles());
+function runScript() {
+  return autoChangelog()
+    .then(res => showWarnings(res))
+    .then(() => autoAuthors())
+    .then(res => showWarnings(res))
+    .then(() => commitFiles())
+    .then(res => showWarnings(res));
 }
 
 runScript().catch(err => {
