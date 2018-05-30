@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint \"*.{js,mjs}\" \"src/**/*.{js,mjs}\"",
     "precommit": "lint-staged",
-    "version": "node ./bin/version.js"
+    "version": "node ./bin/version.js",
+    "test": "echo maybe add some tests..."
   },
   "repository": {
     "type": "git",
