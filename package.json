@@ -1,6 +1,6 @@
 {
   "name": "@w33ble/npm-auto-tools",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Automatic tooling for npm modules",
   "bin": {
     "npm-auto-version": "./bin/version.js"
