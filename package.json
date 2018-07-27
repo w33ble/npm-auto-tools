@@ -30,13 +30,6 @@
     "url": "https://github.com/w33ble/npm-auto-tools/issues"
   },
   "homepage": "https://github.com/w33ble/npm-auto-tools",
-  "auto-changelog": {
-    "output": "CHANGELOG.md",
-    "breakingPattern": "BREAKING CHANGE:",
-    "template": ".changelog_template.hbs",
-    "ignoreCommitPattern": "(chore|test|tests|doc|docs):",
-    "commitLimit": false
-  },
   "lint-staged": {
     "ignore": [
       "package.json"
