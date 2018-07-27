@@ -1,5 +1,10 @@
 ### Changelog
 
+#### [v0.2.0](https://github.com/w33ble/npm-auto-tools/compare/v0.1.1...v0.2.0) (27 July 2018)
+- feat: exclude additional commits from changelog [`937a9b7`](https://github.com/w33ble/npm-auto-tools/commit/937a9b70af404943f0f5d0e357d876110bb9b7a7)
+
+#### [v0.1.1](https://github.com/w33ble/npm-auto-tools/compare/v0.1.0...v0.1.1) (30 May 2018)
+
 #### v0.1.0 (30 May 2018)
 - feat: add --unreleased flag [`42e7c9c`](https://github.com/w33ble/npm-auto-tools/commit/42e7c9c8872f721b3f25ba8bd3d8ae4cb3401f7b)
 - feat: add npm-auto-version bin [`3191f80`](https://github.com/w33ble/npm-auto-tools/commit/3191f8003abf12fe351c1a19aadef29d739d3a66)
