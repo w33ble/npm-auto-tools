@@ -21,7 +21,8 @@
     "index.js",
     "index.mjs",
     "CHANGELOG.md",
-    "AUTHORS.md"
+    "AUTHORS.md",
+    "changelog-template.hbs"
   ],
   "author": "joe fleming (https://github.com/w33ble)",
   "license": "MIT",

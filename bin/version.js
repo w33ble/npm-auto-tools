@@ -22,7 +22,7 @@ const autoChangelog = () => {
     '--commit-limit',
     'false',
     '--ignore-commit-pattern',
-    '(chore|test):',
+    '(chore|test|tests):',
     '--output',
     'CHANGELOG.md',
     '--template',
