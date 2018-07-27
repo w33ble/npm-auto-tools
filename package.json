@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "eslint \"*.{js,mjs}\" \"src/**/*.{js,mjs}\"",
     "precommit": "lint-staged",
-    "version": "node ./bin/version.js",
+    "postversion": "node ./bin/version.js && git commit --amend",
     "test": "echo maybe add some tests..."
   },
   "repository": {
