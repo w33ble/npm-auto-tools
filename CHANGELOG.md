@@ -1,6 +1,7 @@
 ### Changelog
 
-#### [v0.2.0](https://github.com/w33ble/npm-auto-tools/compare/v0.1.1...v0.2.0) (27 July 2018)
+#### [v0.2.2](https://github.com/w33ble/npm-auto-tools/compare/v0.1.1...v0.2.2) (27 July 2018)
+- fix: ignore tests, include changelog template [`bcbbf2d`](https://github.com/w33ble/npm-auto-tools/commit/bcbbf2d24efd231094301c9e05e5e56acbcc5e0c)
 - feat: exclude additional commits from changelog [`937a9b7`](https://github.com/w33ble/npm-auto-tools/commit/937a9b70af404943f0f5d0e357d876110bb9b7a7)
 
 #### [v0.1.1](https://github.com/w33ble/npm-auto-tools/compare/v0.1.0...v0.1.1) (30 May 2018)
