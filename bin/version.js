@@ -9,9 +9,11 @@ const clTemplate = path.join(__dirname, '..', 'changelog-template.hbs');
 const options = getopts(process.argv.slice(2), {
   alias: {
     u: 'unreleased',
+    p: 'package',
   },
   default: {
     unreleased: false,
+    package: true,
   },
 });
 
@@ -30,6 +32,7 @@ const autoChangelog = () => {
   ];
 
   if (options.unreleased) args.push('--unreleased');
+  if (options.package) args.push('--package');
 
   return execa('auto-changelog', args);
 };
